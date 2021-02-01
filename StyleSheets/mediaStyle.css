@@ -1,0 +1,224 @@
+/*--------------Responsiveness----------------*/
+
+@media only screen and (max-width: 768px) {
+    
+    header img {
+        height: 80px;
+    }
+    
+    h2 {
+        font-size: 4.2vw;
+    }
+    
+    .pageTitle h1 {
+        font-size: 4.5vw;
+    }
+    
+    .mainTitle h1 {
+        font-size: 5vw;
+    }
+    
+    #menuTitle a {
+        font-size: 4vw;
+    }
+
+    #menuTitle a:hover {
+        font-size: 4.2vw;
+    }
+    
+    .dropDown, .otherOpts {
+        display: none;
+    }
+    
+    .dropDown:hover .dropContent {
+        display: none;
+    }
+    
+    .dropDown:hover {
+        cursor: pointer;
+    }
+    
+    .dropContent a {
+        font-size: 3vw;
+    }
+    
+    .menuIcon {
+        display: inline-block;
+    }
+    
+    .content p {
+        font-size: 2.9vw;
+    }
+
+    .stop {
+        font-size: 2.1vw;
+    }
+    
+    .toTop {
+        width: 5.5vw;
+    }
+
+    .toTop i {
+        right: 0.2vw;
+        bottom: 13vw;
+        font-size: 3vw;
+    }    
+    
+/*-------------------Main Content--------------*/
+    
+    .globalArticle {
+        margin-left: 5%;
+    }
+    
+    article {
+        width: 100%;
+        margin: 0 0 2% 0%;
+    }
+    
+    aside {
+        display: none;
+    }
+    
+    article p {
+        font-size: 3.3vw;
+    }
+    
+    figcaption {
+        font-size: 2.3vw;;
+    }
+    
+    .quote {
+        font-size: 2.7vw;
+    }
+    
+/*------------------Footer----------------*/
+    footer form label {
+        font-size: 3vw;
+        letter-spacing: 0.1vw;
+    }
+    
+    .subscribeField {
+        width: 28%;
+    }
+    
+    .submitB {
+        width: 9%;
+        font-size: 1.5vw;
+    }
+    
+    .footer h3 {
+        font-size: 3.3vw;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    
+    header img {
+        height: 50px;
+    }
+    
+    #menuTitle a {
+        font-size: 4.9vw;
+    }
+    
+    #menuTitle a:hover {
+        font-size: 5.1vw;
+    }
+    
+    h2 {
+        font-size: 5.2vw;
+        letter-spacing: 0.5vw;
+    }
+    
+    h3 {
+        font-size: 5vw;
+    }
+    
+    .mainTitle h1 {
+        font-size: 5.5vw;
+    }
+    
+    .iconOpts ul {
+        width: 30%;
+    }
+    
+    .iconOpts .dropDown, .iconOpts .otherOpts a {
+        font-size: 4.4vw;
+    }
+    
+    .dropContent {
+        margin-right: 5%;
+    }
+    
+    .dropContent a {
+        font-size: 3.6vw;
+        text-transform: uppercase;
+    }
+    
+    .pageTitle h1 {
+        font-size: 5.3vw;
+    }
+    
+    .toTop {
+        width: 8.3vw;
+    }
+
+    .toTop i {
+        right: 0.8vw;
+        bottom: 21vw;
+        font-size: 3.7vw;
+    } 
+    
+/*-------------Main Content------------*/
+    
+    article p {
+        font-size: 4.6vw;
+    }
+    
+    figcaption {
+        font-size: 3.7vw;;
+    }
+    
+    .quote {
+        font-size: 4.3vw;
+    }
+    
+/*--------------Footer--------------*/
+    
+    footer form label {
+        display: none;
+    }
+    
+    .sml {
+        display: inline;
+        font-size: 4vw;
+        letter-spacing: 0.3vw;
+    }
+    
+    .subscribeField {
+        width: 30%;
+    }
+    
+    .submitB {
+        width: 13%;
+        font-size: 2vw;
+    }
+    
+    .left, .center, .right {
+        display: block;
+        width: 75%;
+        margin: 1% auto 3% auto;
+    }
+    
+    .center {
+        border: none;
+    }
+    
+    .footer h3 {
+        font-size: 3.6vw;
+    }
+    
+    .left p, .center ul li a, .right p, .right a {
+        font-size: 3.4vw;
+    }
+}

@@ -1,0 +1,600 @@
+/* -------------General-------------- */
+
+* {
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+body {
+    background: url("/Textures/wire2.png");
+    background-color: #f4f6ff;
+}
+
+@font-face {
+  font-family: 'mainFont';
+  src: url(/Fonts/TitilliumWeb-Light.ttf);
+}
+
+@font-face {
+  font-family: 'navFont';
+  src: url(/Fonts/TitilliumWeb-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: 'headerFont';
+  src: url(/Fonts/MetalMania-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'mainHeader';
+  src: url(/Fonts/NewRocker-Regular.ttf);
+}
+
+cite, strong, em, a {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1, h2, h3 {
+    padding: 0.4%;
+    font-family: 'headerFont', 'Times New Roman', serif;
+    color: #1b1c25;
+}
+
+h1, h2 {
+    margin-top: 1.5%;
+}
+
+h2 {
+    font-size: 2.6vw;
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+    text-shadow: 0px 3px 3px #1b1c25;
+    background-color: #c5c5c5;
+}
+
+h3 {
+    margin-bottom: 1%;
+    margin-top: 5%;
+    font-size: 1.5em;
+    letter-spacing: 0.19em;
+    text-shadow: 0px 3px 4px #1b1c25;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'mainFont', 'Arial', sans-serif;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'mainFont', 'Arial', sans-serif;
+}
+
+
+/* --------------Header-------------- */
+
+header img {
+    width: 98%;
+}
+
+.mainTitle h1 {
+    margin-top: 0;
+    margin-bottom: 2%;
+    font-family: 'mainHeader', 'Times New Roman', serif;
+    letter-spacing: 0.5vw;
+    word-spacing: 0.9vw;
+    font-size: 4vw;
+    color: #990000;
+    text-shadow: 0px 2px 3px #303841;
+}
+
+.mainTitle a {
+    text-align: center;
+}
+  
+/* --------------Main Menu-----------------*/
+
+nav {
+    width: 94%;
+    margin: 4% 0 2% 3%;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    background-color: rgba(228, 227, 227, 0.6);
+    border-bottom: 3px solid;
+}
+
+.menuIcon {
+    display: none;
+    position: absolute;
+    float: right;
+    right: 5%;
+    top: 18%;
+    z-index: 1;
+}
+
+.menuIcon div {
+    display: block;
+    width: 5vw;
+    height: 1vw;
+    margin: 0.5vw;
+    background-color: snow;
+    box-shadow: 3px 3px 1px #07031a, 0 0 5px #41444b;
+}
+
+.iconOpts {
+    display: none;
+}
+
+.iconOpts ul {
+    position: absolute;
+    right: 3%;
+    width: 25%;
+    background-color: rgba(228, 227, 227, 0.6);
+}
+
+.iconOpts ul li {
+    text-align: right;
+    padding-right: 5%;
+    display: block;
+    border-bottom: 2px solid white;
+}
+
+.iconOpts ul li .dropContent {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -60%;
+    z-index: 1;
+    width: 200%;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0 3%;
+    padding: 1.5% 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0;
+}
+
+nav li a, .dropDown {
+    padding: 0 2%;
+    font-family: 'navFont', 'Arial', sans-serif;
+    font-size: 2.5vw;
+    color: #07031a;
+}
+
+#menuTitle {
+    margin: 0 5% 0 0;
+}
+
+#menuTitle a {
+    padding: 0;
+    font-size: 3.6vw;
+    font-weight: 200;
+    font-family: 'mainHeader', 'Times New Roman', serif;
+    color: #630a10;
+}
+
+#menuTitle a:hover {
+    color: #aa1111;
+    font-size: 3.7vw;
+}
+
+.dropDown, .otherOpts a {
+    color: snow;
+    text-shadow: 3px 3px 1px #07031a, 0 0 5px #41444b;
+}
+
+.iconOpts .dropDown, .iconOpts .otherOpts a {
+    font-size: 3.5vw;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDown:hover .dropContent {
+    display: block;
+}
+
+.dropDown:hover {
+    cursor: pointer;
+}
+
+.dropContent {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 200%;
+}
+
+.dropContent a {
+    display: block;
+    background-color: rgba(228, 227, 227, 0.6);
+    font-size: 2.1vw;
+    margin: 2% 0;
+    color: black;
+    text-shadow: 2px 2px 2px white; 
+}
+
+.special {
+    margin-top: 5%;
+}
+
+
+/*--------------Slideshow------------------*/
+
+.slideShow {
+    background-color: #f4f6ff; 
+    position: relative;
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+.Slide {
+    margin: 0;
+}
+
+.slideShow img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    padding: 3%;
+    margin: 0;
+}
+
+.content p, .content button {
+    display: inline;
+}
+
+.content p {
+    color: white;
+    /*font-size: 1.7em;*/
+    font-size: 2.3vw;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+}
+
+.stop {
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    padding: 0.2em 1.2em;
+    background-color: #6f0000;
+    border-radius: 12px;
+    font-family: 'mainFont', 'Arial', sans-serif;
+    font-weight: 600;
+    /*font-size: 1.2em;*/
+    font-size: 1.6vw;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: white;
+}
+
+/* -------------Main Content -------------*/
+
+.toTop {
+    /*width: 3%;*/
+    width: 4vw;
+    height: auto;
+    display: none;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    bottom: 4%;
+    background-color: white;
+}
+
+.toTop img {
+    width: 80%;
+    height: auto;
+}
+
+.toTop i {
+    display: none;  
+    z-index: 1;
+    position: fixed;
+    right: 0.4vw;
+    bottom: 10vw;
+    color: red;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.toTop:hover i {
+    display: block;
+}
+
+.pageTitle {
+    text-align: center;
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+
+.pageTitle h1 {
+    margin: 0;
+    padding: 1.4%;
+    font-size: 3.3vw;
+    font-weight: 800;
+    letter-spacing: 0.7vw;
+    text-shadow: 0px 4px 4px #1b1c25;
+    background-color: #f4f6ff;
+}
+
+.item {
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+article, aside {
+    display: inline-block;
+    padding: 1%;
+    background-color: #eeeeee;
+    box-shadow: 0px 0px 10px #838383;
+}
+
+article {
+    width: 65%;
+    margin: 0 0 2% 5%;
+}
+
+aside {
+    width: 22%;
+    float: right;
+    margin-left: 0;
+    margin-right: 5%;
+    position: relative;
+}
+
+aside img {
+    width: 100%;
+}
+
+aside p, aside a, .globalArticle aside p, .globalArticle aside a {
+    /*font-size: 1.1em;*/
+    font-size: 1.4vw;
+    color: #222831;
+} 
+
+aside a:hover, .globalArticle aside a:hover {
+    color: red;
+}
+
+aside .detail, .globalArticle aside .detail {
+    /*font-size: 0.9em;*/
+    font-size: 1.2vw;
+}
+
+.globalArticle aside .specialLink {
+    color: red;
+    /*font-size: 1.1em;*/
+    font-size: 1.4vw;
+    font-style: normal;
+}
+
+section {
+    border: 1px dashed black;
+}
+
+article p {
+    /*font-size: 1.4em;*/
+    font-size: 1.6vw;
+    color: #222831;
+}
+
+article p a, figcaption {
+    font-style: italic;
+    color: #222831;
+}
+
+figcaption {
+    font-size: 1.3vw;
+}
+
+article figure img {
+    width: 100%;
+}
+
+article figure{
+    float: left;
+    margin: 0% 3% 0% 1%;
+    width: 45%;
+    text-align: center;
+}
+
+blockquote {
+    margin: 3% 2% 1% 0;
+}
+
+.quote {
+    width: 92%;
+    position: relative;
+    left: 3%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    text-align: left;
+    /*font-size: 1.2em;*/
+    font-size: 1.3vw;
+    background-color: rgb(228, 227, 227);
+}
+
+video {
+    width: 98%;
+    margin-top: 1.5%;
+    margin-bottom: 2.5%;
+    border: 1px dotted #838383;
+}
+
+/*---------------Other Pages--------------------*/
+
+.globalArticle {
+    width: 90%;
+} 
+
+.nameArticle {
+    text-align: center;
+    margin-bottom: 3.5%;
+}
+
+.nameArticle, .globalArticle h3 {
+    background-color: #c5c5c5;
+}
+
+.globalArticle h3 {
+    padding-left: 1.5%;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+
+iframe{
+    width: 100%;
+}
+
+
+/* --------------Footer---------------- */
+
+footer {
+    margin: 0;
+    margin-left: 3%;
+    width: 94%;
+    background-color: rgb(228, 227, 227);
+    box-shadow: 0px 0px 13px #838383;
+}
+
+footer form, .footer {
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+footer form {
+    text-align: center;
+    padding: 1%;
+}
+
+footer form label {
+    font-size: 1.6em;
+    letter-spacing: 0.06em;
+}
+
+.sml {
+    display: none;
+}
+
+.subscribeField {
+    width: 22%;
+}
+
+footer form div {
+    display: inline;
+}
+
+.submitB {
+    width: 7%;
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.left, .center, .right {
+    display: inline-table;
+    width: 30%;
+}
+
+.footer h3, .left p, .center ul, .right address, .right p {
+    /*border: 1px dashed black; */
+    margin: 2% 2%;
+    padding: 2%;
+}
+
+.right address, .left p, .center ul, footer form {
+    background-color: #e8e4e1;
+    box-shadow: 0px 2px 3px #c5c5c5;
+}
+
+.center {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.left p {
+    text-align: left;
+    font-size: 1.1em;
+    color: black;
+}
+
+.center ul li {
+    /*border: 1px dashed black;*/
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    text-align: center;
+}
+
+.center ul li a {
+    color: black;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/*Contact Us text*/
+.right p, .right a { 
+    text-align: center;
+    font-size: 1.1em;
+    color: black;
+}
+
+.right a {
+    color: #630a10;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
